@@ -1,9 +1,8 @@
 require 'nokogiri'
 require 'open-uri'
-require 'csv'
 
-#url = 'http://www.takeiho.com'
-url = 'http://www.hitode-festival.com/'
+url = 'http://www.takeiho.com'
+#url = 'http://www.hitode-festival.com/'
 
 charset = nil
 continue = true;
@@ -18,6 +17,7 @@ while continue do
 	doc.xpath('//a[@class="entry-title-link"]').each do | node |
 		p node.get_attribute(:href)
 		p node.inner_text
+		# p node.inner_text + "," + node.get_attribute(:href)
 	end
 	
 	doc.xpath('//span[@class="pager-next"]/a').each do | node |
