@@ -1,8 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 
-url = 'http://www.takeiho.com'
-#url = 'http://www.hitode-festival.com/'
+url = '[ここにはてなブログのURLを指定]'
 
 charset = nil
 continue = true;
